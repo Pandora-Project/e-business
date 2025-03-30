@@ -1,0 +1,48 @@
+# Dockerfile for Play Framework Scala Application
+ARG JDK_VERSION=17
+FROM openjdk:${JDK_VERSION}-jdk-slim AS builder
+
+# Set working directory
+WORKDIR /app
+
+# Install sbt
+RUN \
+    apt-get update && \
+    apt-get install -y curl gnupg apt-transport-https && \
+    echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | tee /etc/apt/sources.list.d/sbt.list && \
+    echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | tee /etc/apt/sources.list.d/sbt_old.list && \
+    curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/scalasbt-release.gpg --import && \
+    chmod 644 /etc/apt/trusted.gpg.d/scalasbt-release.gpg && \
+    apt-get update && \
+    apt-get install -y sbt && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY build.sc .
+COPY build.sbt .
+COPY project ./project
+
+RUN sbt update ; exit 0
+
+# Copy the rest of the application source code from the 'play-scala-seed' directory
+COPY . .
+
+# Build the application using sbt stage.
+RUN sbt clean stage
+
+# Set the base image for the final stage
+FROM openjdk:${JDK_VERSION}-jre-slim AS runner
+
+WORKDIR /app
+
+# --- Non-Root User (Recommended for Security) ---
+# Creating a non-root user and group to run the application
+RUN groupadd --system appgroup && useradd --system --gid appgroup appuser
+USER appuser
+
+# Copying the built application artifacts from the builder stage
+COPY --from=builder --chown=appuser:appgroup /app/target/universal/stage .
+
+# Exposing the port the application runs on (default Play port is 9000)
+EXPOSE 9000
+
+CMD ["sh", "-c", "rm -f /app/RUNNING_PID && ./bin/play-scala-seed"]

@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+POST    /products           controllers.ProductsController.create()
+GET     /products           controllers.ProductsController.list()
+GET     /products/:id       controllers.ProductsController.get(id: Int)
+GET     /assets/*file       controllers.Assets.versioned(path="/public", file: Asset)
+PUT     /products/:id       controllers.ProductsController.update(id: Int)
+DELETE  /products/:id       controllers.ProductsController.delete(id: Int)

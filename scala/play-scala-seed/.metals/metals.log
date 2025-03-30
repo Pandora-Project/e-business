@@ -1,0 +1,202 @@
+2025.03.30 15:23:21 INFO  Started: Metals version 1.5.1 in folders 'F:\uczelnia\UJ\e-business\scala\play-scala-seed' for client Visual Studio Code 1.98.2.
+Mar 30, 2025 3:23:23 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 30, 2025 3:23:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:23:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:23:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 15:23:50 INFO  running 'C:\Users\barto\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17.0.14%252B7\OpenJDK17U-jdk_x64_windows_hotspot_17.0.14_7.zip\jdk-17.0.14+7\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\barto\AppData\Local\Temp\metals12927704079178144014\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+Mar 30, 2025 3:23:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 15:23:53 INFO  sbt thinks that server is already booting because of this exception:
+2025.03.30 15:23:53 ERROR sbt.internal.ServerAlreadyBootingException: java.io.IOException: Could not create lock for \\.\pipe\sbt-load1926828437060250812_lock, error 5
+2025.03.30 15:23:53 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:357)
+2025.03.30 15:23:53 ERROR 	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:296)
+2025.03.30 15:23:53 ERROR 	at sbt.xMain$.getSocketOrExit(Main.scala:153)
+2025.03.30 15:23:53 ERROR 	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:79)
+2025.03.30 15:23:53 ERROR 	at sbt.xMain$.bootServerSocket$1(Main.scala:79)
+2025.03.30 15:23:53 ERROR 	at sbt.xMain$.withStreams$1(Main.scala:87)
+2025.03.30 15:23:53 ERROR 	at sbt.xMain$.run(Main.scala:124)
+2025.03.30 15:23:53 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2025.03.30 15:23:53 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2025.03.30 15:23:53 ERROR 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2025.03.30 15:23:53 ERROR 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+2025.03.30 15:23:53 ERROR 	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+2025.03.30 15:23:53 ERROR 	at sbt.xMain.run(Main.scala:48)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.run(Launch.scala:149)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.launch(Launch.scala:159)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:44)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:21)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Boot$.runImpl(Boot.scala:78)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Boot$.run(Boot.scala:73)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Boot$.main(Boot.scala:21)
+2025.03.30 15:23:53 ERROR 	at xsbt.boot.Boot.main(Boot.scala)
+2025.03.30 15:23:53 ERROR Caused by: java.io.IOException: Could not create lock for \\.\pipe\sbt-load1926828437060250812_lock, error 5
+2025.03.30 15:23:53 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:129)
+2025.03.30 15:23:53 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:48)
+2025.03.30 15:23:53 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:351)
+2025.03.30 15:23:53 ERROR 	... 23 more
+2025.03.30 15:23:53 INFO  time: ran 'sbt bloopInstall' in 3.22s
+2025.03.30 15:23:53 ERROR sbt command failed: C:\Users\barto\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17.0.14%252B7\OpenJDK17U-jdk_x64_windows_hotspot_17.0.14_7.zip\jdk-17.0.14+7\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\barto\AppData\Local\Temp\metals12927704079178144014\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+Mar 30, 2025 3:23:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:24:09 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:24:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:26:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:26:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 15:26:07 INFO  sbt 1.10.9 found for workspace.
+2025.03.30 15:26:08 INFO  sbt thinks that server is already booting because of this exception:
+2025.03.30 15:26:08 ERROR sbt.internal.ServerAlreadyBootingException: java.io.IOException: Could not create lock for \\.\pipe\sbt-load1926828437060250812_lock, error 5
+2025.03.30 15:26:08 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:357)
+2025.03.30 15:26:08 ERROR 	at sbt.internal.BootServerSocket.<init>(BootServerSocket.java:296)
+2025.03.30 15:26:08 ERROR 	at sbt.xMain$.getSocketOrExit(Main.scala:153)
+2025.03.30 15:26:08 ERROR 	at sbt.xMain$.bootServerSocket$lzycompute$1(Main.scala:79)
+2025.03.30 15:26:08 ERROR 	at sbt.xMain$.bootServerSocket$1(Main.scala:79)
+2025.03.30 15:26:08 ERROR 	at sbt.xMain$.withStreams$1(Main.scala:87)
+2025.03.30 15:26:08 ERROR 	at sbt.xMain$.run(Main.scala:124)
+2025.03.30 15:26:08 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2025.03.30 15:26:08 ERROR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+2025.03.30 15:26:08 ERROR 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2025.03.30 15:26:08 ERROR 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+2025.03.30 15:26:08 ERROR 	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)
+2025.03.30 15:26:08 ERROR 	at sbt.xMain.run(Main.scala:48)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.run(Launch.scala:149)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.launch(Launch.scala:159)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:44)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Launch$.apply(Launch.scala:21)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Boot$.runImpl(Boot.scala:78)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Boot$.run(Boot.scala:73)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Boot$.main(Boot.scala:21)
+2025.03.30 15:26:08 ERROR 	at xsbt.boot.Boot.main(Boot.scala)
+2025.03.30 15:26:08 ERROR Caused by: java.io.IOException: Could not create lock for \\.\pipe\sbt-load1926828437060250812_lock, error 5
+2025.03.30 15:26:08 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:129)
+2025.03.30 15:26:08 ERROR 	at org.scalasbt.ipcsocket.Win32NamedPipeServerSocket.<init>(Win32NamedPipeServerSocket.java:48)
+2025.03.30 15:26:08 ERROR 	at sbt.internal.BootServerSocket.newSocket(BootServerSocket.java:351)
+2025.03.30 15:26:08 ERROR 	... 23 more
+2025.03.30 15:26:08 INFO  time: ran 'sbt bspConfig' in 0.92s
+2025.03.30 15:26:07 ERROR Creation of .bsp/sbt failed with exit code: 2
+Mar 30, 2025 3:26:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:26:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:26:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:26:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:27:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:28:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:28:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:29:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:30:35 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:30:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:30:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:31:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:32:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:32:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 15:32:56 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 15:32:56 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 15:32:56 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 15:33:03 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Mar 30, 2025 3:33:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+2025.03.30 15:33:03 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Mar 30, 2025 3:33:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 15:33:04 INFO  time: code lens generation in 1.69s
+2025.03.30 15:33:04 INFO  time: code lens generation in 1.68s
+Mar 30, 2025 3:33:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:33:34 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:33:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 30, 2025 3:34:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:35:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:35:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 3:35:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 30, 2025 6:42:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 6:42:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 18:42:49 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:51 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:51 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:51 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:51 WARN  Could not find semantic tokens for: file:///F:/uczelnia/UJ/e-business/scala/play-scala-seed/project/plugins.sbt
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+Mar 30, 2025 6:42:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: empty definition using pc, found symbol in pc:  (full report at: F:\uczelnia\UJ\e-business\scala\play-scala-seed\.metals\.reports\metals-full\2025-03-30\r_empty-definition_18-42-54-593.md)
+2025.03.30 18:42:54 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:54 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:54 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:53 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:54 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:54 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:55 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.30 18:42:55 INFO  no build target found for F:\uczelnia\UJ\e-business\scala\play-scala-seed\build.sbt. Using presentation compiler with project's scala-library version: 3.3.4
+Mar 30, 2025 6:42:55 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: empty definition using pc, found symbol in pc:  (full report at: F:\uczelnia\UJ\e-business\scala\play-scala-seed\.metals\.reports\metals-full\2025-03-30\r_empty-definition_18-42-54-593.md)
+Mar 30, 2025 6:42:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 6:43:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 6:43:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 30, 2025 6:43:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.30 19:00:03 INFO  Shutting down server
+2025.03.30 19:00:03 INFO  shutting down Metals
+2025.03.30 19:00:03 INFO  Exiting server
