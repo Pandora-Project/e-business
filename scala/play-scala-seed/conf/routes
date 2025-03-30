@@ -1,11 +1,24 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# https://www.playframework.com/documentation/latest/ScalaRouting
-# ~~~~
-
+# Trasy dla Produktów
 POST    /products           controllers.ProductsController.create()
 GET     /products           controllers.ProductsController.list()
 GET     /products/:id       controllers.ProductsController.get(id: Int)
 GET     /assets/*file       controllers.Assets.versioned(path="/public", file: Asset)
 PUT     /products/:id       controllers.ProductsController.update(id: Int)
 DELETE  /products/:id       controllers.ProductsController.delete(id: Int)
+GET     /assets/*file       controllers.Assets.versioned(path="/public", file: Asset)
+
+# Trasy dla Kategorii
+POST    /categories                 controllers.CategoryController.create()
+GET     /categories                 controllers.CategoryController.list()
+GET     /categories/:id             controllers.CategoryController.get(id: Int)
+PUT     /categories/:id             controllers.CategoryController.update(id: Int)
+DELETE  /categories/:id             controllers.CategoryController.delete(id: Int)
+
+# Trasy dla Koszyka
+POST    /carts                      controllers.CartController.create()
+GET     /carts/:id                  controllers.CartController.get(id: Int)
+POST    /carts/:cartId/items        controllers.CartController.addItem(cartId: Int)
+DELETE  /carts/:cartId/items/:itemId controllers.CartController.removeItem(cartId: Int, itemId: Int)
+PUT     /carts/:id                  controllers.CartController.update(id: Int)
+PUT     /carts/:cartId/items/:itemId controllers.CartController.updateItem(cartId: Int, itemId: Int)
+DELETE  /carts/:id                  controllers.CartController.delete(id: Int)

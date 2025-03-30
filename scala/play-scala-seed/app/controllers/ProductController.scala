@@ -10,12 +10,10 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
 
   private val products = ListBuffer[String]("Laptop", "Smartphone", "Headphones")
 
-  // Retrieve all products
   def list() = Action {
     Ok(products.mkString(", "))
   }
 
-  // Retrieve a product by ID
   def get(id: Int) = Action {
     if (id >= 0 && id < products.length) {
       Ok(s"Product: ${products(id)}")
@@ -24,7 +22,6 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
     }
   }
 
-  // Async method to create a product
   def create() = Action.async(parse.text: BodyParser[String]) { request =>
     val productName = request.body.trim
     if (productName.nonEmpty) {
@@ -36,7 +33,6 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
     }
   }
 
-  // Mock async operation to simulate a database insert
   private def createProduct(productName: String): Future[String] = Future {
     // Simulate database insertion delay
     Thread.sleep(100) // Simulating asynchronous behavior
@@ -44,7 +40,6 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
     "Operation successful"
   }
 
-  // Update a product by ID
   def update(id: Int) = Action.async(parse.text: BodyParser[String]) { request =>
     val newName = request.body.trim
     if (id >= 0 && id < products.length) {
@@ -60,7 +55,6 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
     }
   }
 
-  // Mock async operation to simulate a database update
   private def updateProduct(id: Int, newName: String): Future[String] = Future {
     // Simulate database update delay
     Thread.sleep(100) // Simulating asynchronous behavior
@@ -68,7 +62,6 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
     "Update operation successful"
   }
 
-  // Delete a product by ID
   def delete(id: Int) = Action.async {
     if (id >= 0 && id < products.length) {
       deleteProduct(id).map { lastMessage =>
@@ -79,7 +72,6 @@ class ProductsController @Inject()(val controllerComponents: ControllerComponent
     }
   }
 
-  // Mock async operation to simulate a database delete
   private def deleteProduct(id: Int): Future[String] = Future {
     // Simulate database deletion delay
     Thread.sleep(100) // Simulating asynchronous behavior
