@@ -25,10 +25,10 @@ skrypt uruchamiający aplikację via ngrok ✅ [link to commit](https://github.c
 ## Docker task 3
 ### Requirements:
 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor,
-która pozwala na przesyłanie wiadomości na platformę Discord✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/fbac22d4dfe92683b1e6492eeb34c475aab864c4)
+która pozwala na przesyłanie wiadomości na platformę Discord✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/fbac22d4dfe92683b1e6492eeb34c475aab864c4)<br/>
 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z
-platformy Discord skierowane do aplikacji (bota)✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/fbac22d4dfe92683b1e6492eeb34c475aab864c4)
-4.0 Zwróci listę kategorii na określone żądanie użytkownika✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)
-4.5 Zwróci listę produktów wg żądanej kategorii✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)
+platformy Discord skierowane do aplikacji (bota)✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/fbac22d4dfe92683b1e6492eeb34c475aab864c4)<br/>
+4.0 Zwróci listę kategorii na określone żądanie użytkownika✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)<br/>
+4.5 Zwróci listę produktów wg żądanej kategorii✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)<br/>
 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger,
-Webex❌
+Webex❌<br/>
