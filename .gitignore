@@ -14,7 +14,6 @@ build/
 .sts4-cache
 bin/
 !**/src/main/**/bin/
-!**/src/main/**/bot-token.txt
 !**/src/test/**/bin/
 ### IntelliJ IDEA ###
 .idea
@@ -34,3 +33,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Bot token ###
+**/src/main/**/bot-token.txt
