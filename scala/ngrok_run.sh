@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-DOCKER_IMAGE="scala-all" # Replace with the name of your Docker image
+DOCKER_IMAGE="scala-app" # Replace with the name of your Docker image
 DOCKER_CONTAINER_NAME="my-scala-app"
 APP_PORT=9000
 
