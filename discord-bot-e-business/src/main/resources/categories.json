@@ -1,0 +1,5 @@
+{
+  "Electronics": ["Smartphone", "Laptop", "Headphones"],
+  "Books": ["Fantasy", "Thrillers", "Comics"],
+  "Clothing": ["T-Shirts", "Jeans", "Jackets"]
+}

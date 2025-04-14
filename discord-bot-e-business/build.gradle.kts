@@ -1,6 +1,7 @@
 
 plugins {
     kotlin("jvm") version "1.8.10"
+    kotlin("plugin.serialization") version "1.9.0"
     id("io.ktor.plugin") version "2.3.2"
 }
 
@@ -30,6 +31,6 @@ dependencies {
     implementation("dev.kord:kord-core:0.14.0")
     implementation("dev.kord:kord-gateway:0.14.0")
     implementation("io.ktor:ktor-server-netty:2.3.12")
-    // Test dependencies
-    testImplementation(kotlin("test"))
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+
 }
