@@ -2,6 +2,7 @@ package database
 
 import (
 	"log"
+
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
@@ -15,4 +16,12 @@ func InitDB() *gorm.DB {
 		log.Fatal("Failed to connect to database:", err)
 	}
 	return DB
+}
+
+func ConnectDatabase() {
+    var err error
+    DB, err = gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
+    if err != nil {
+        panic("Failed to connect to database!")
+    }
 }

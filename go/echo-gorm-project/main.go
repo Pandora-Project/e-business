@@ -1,3 +1,5 @@
+// main.go
+
 package main
 
 import (
@@ -10,20 +12,27 @@ import (
 )
 
 func main() {
-	// Inicjalizacja bazy danych
-	db := database.InitDB()
-	db.AutoMigrate(&models.Product{}, &models.Cart{}, &models.Category{})
+    // Init DB
+    database.ConnectDatabase()
+    database.DB.AutoMigrate(
+        &models.Product{},
+        &models.Category{},
+        &models.Cart{},
+        &models.Order{},      
+        &models.OrderItem{},
+    )
 
-	// Inicjalizacja Echo
-	e := echo.New()
-	e.Use(middleware.Logger())
-	e.Use(middleware.Recover())
+    e := echo.New()
+    e.Use(middleware.Logger())
+    e.Use(middleware.Recover())
 
-	// Endpointy
-	controllers.RegisterProductRoutes(e)
-	controllers.RegisterCartRoutes(e)
-	controllers.RegisterCategoryRoutes(e)
+    // Register your existing routes
+    controllers.RegisterProductRoutes(e)
+    controllers.RegisterCategoryRoutes(e)
+    controllers.RegisterCartRoutes(e)
 
-	// Start serwera
-	e.Logger.Fatal(e.Start(":8080"))
+    // **Register the orders routes**
+    controllers.RegisterOrderRoutes(e)
+
+    e.Logger.Fatal(e.Start(":8080"))
 }
