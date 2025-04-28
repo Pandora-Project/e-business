@@ -32,3 +32,17 @@ platformy Discord skierowane do aplikacji (bota)✅ [link to commit](https://git
 4.5 Zwróci listę produktów wg żądanej kategorii✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)<br/>
 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger,
 Webex❌<br/>
+
+## Docker task 4
+### Requirements:
+3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
+miała kontroler Produktów zgodny z CRUD✅
+3.5 Należy stworzyć model Produktów wykorzystując gorm oraz
+wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast
+listy)✅
+4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint✅
+4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
+a produktem✅
+5.0 pogrupować zapytania w gorm’owe scope'y✅
+[link to commit](https://github.com/Pandora-Project/e-business/commit/36cc40a43fb0875538727a74edd681f858cf850d)
+
