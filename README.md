@@ -36,13 +36,13 @@ Webex❌<br/>
 ## Docker task 4
 ### Requirements:
 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
-miała kontroler Produktów zgodny z CRUD✅
+miała kontroler Produktów zgodny z CRUD✅<br/>
 3.5 Należy stworzyć model Produktów wykorzystując gorm oraz
 wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast
-listy)✅
-4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint✅
+listy)✅<br/>
+4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint✅<br/>
 4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
-a produktem✅
-5.0 pogrupować zapytania w gorm’owe scope'y✅
+a produktem✅<br/>
+5.0 pogrupować zapytania w gorm’owe scope'y✅<br/>
 [link to commit](https://github.com/Pandora-Project/e-business/commit/36cc40a43fb0875538727a74edd681f858cf850d)
 
