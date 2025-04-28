@@ -21,3 +21,14 @@ zgodnie z CRUD ✅ [link to commit](https://github.com/Pandora-Project/e-busines
 skrypt uruchamiający aplikację via ngrok ✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/5d82f2fbd6d1fff34bf37f5d9f91923b71864b31) <br/>
 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD ❌ <br/>
 [Docker Image](https://hub.docker.com/repository/docker/pandoraproject/scala-crud/general)
+
+## Docker task 3
+### Requirements:
+3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor,
+która pozwala na przesyłanie wiadomości na platformę Discord✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/fbac22d4dfe92683b1e6492eeb34c475aab864c4)<br/>
+3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z
+platformy Discord skierowane do aplikacji (bota)✅ [link to commit](https://github.com/Pandora-Project/e-business/commit/fbac22d4dfe92683b1e6492eeb34c475aab864c4)<br/>
+4.0 Zwróci listę kategorii na określone żądanie użytkownika✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)<br/>
+4.5 Zwróci listę produktów wg żądanej kategorii✅[link to commit](https://github.com/Pandora-Project/e-business/commit/6a42513d11c85a82ab87c34f2c1183093602a380)<br/>
+5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger,
+Webex❌<br/>
