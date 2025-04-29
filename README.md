@@ -52,7 +52,7 @@ a produktem✅<br/>
 Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
 Produktach powinniśmy pobierać dane o produktach z aplikacji
 serwerowej ✅<br/>
-3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing
+3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing ✅<br/>
 4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za
 pomocą React hooks ✅<br/>
 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
