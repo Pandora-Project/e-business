@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatGPT Bot</title>
+</head>
+<body>
+  <h1>ChatGPT Bot</h1>
+  <textarea id="userInput" rows="4" cols="50" placeholder="Wpisz wiadomość..."></textarea><br>
+  <button onclick="sendMessage()">Wyślij</button>
+  <p id="response"></p>
+
+    <script>
+    function sendMessage() {
+        const text = document.getElementById('userInput').value;
+        fetch('http://localhost:5001/analyze', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ text })
+        })
+        .then(response => response.json())
+        .then(data => {
+        document.getElementById('response').innerText = data.response;
+        })
+        .catch(error => {
+        console.error('Błąd:', error);
+        document.getElementById('response').innerText = 'Wystąpił błąd.';
+        });
+    }
+    </script>
+
+</body>
+</html>
