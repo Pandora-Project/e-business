@@ -46,3 +46,16 @@ a produktem✅<br/>
 5.0 pogrupować zapytania w gorm’owe scope'y✅<br/>
 [link to commit](https://github.com/Pandora-Project/e-business/commit/36cc40a43fb0875538727a74edd681f858cf850d)
 
+## Docker task 5
+### Requirements:
+3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
+Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
+Produktach powinniśmy pobierać dane o produktach z aplikacji
+serwerowej ✅<br/>
+3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing ✅<br/>
+4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za
+pomocą React hooks ✅<br/>
+4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
+kliencką na dockerze via docker-compose✅<br/>
+5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS ✅<br/>
+[link to commit](https://github.com/Pandora-Project/e-business/commit/090e5de4d02b8bd97cec63e206e1695723cf2033)
