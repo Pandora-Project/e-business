@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  client:
+    build: ./client
+    ports:
+      - "3000:80" # Vite/Nginx or Vite preview on port 80
+    depends_on:
+      - server
+
+  server:
+    build: ./server
+    ports:
+      - "4000:4000" # Replace with your backend's actual port
+    environment:
+      - NODE_ENV=production
