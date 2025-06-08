@@ -21,9 +21,10 @@ func main() {
 	app := fiber.New()
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:3000",
+		AllowOrigins: "https://frontend-s78g.onrender.com, http://localhost:3000",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
+
 
 	todos := []Todo{}
 
