@@ -59,3 +59,22 @@ pomocą React hooks ✅<br/>
 kliencką na dockerze via docker-compose✅<br/>
 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS ✅<br/>
 [link to commit](https://github.com/Pandora-Project/e-business/commit/090e5de4d02b8bd97cec63e206e1695723cf2033)
+
+## Docker task 7
+### Requirements:
+3.0 Należy dodać literę do odpowiedniego kodu aplikacji serwerowej w hookach gita ✅<br/>
+3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod aplikacji serwerowej) ✅<br/>
+4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod aplikacji serwerowej) ✅<br/>
+4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa w kodzie w Sonarze (kod aplikacji serwerowej) ✅<br/>
+5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie aplikacji klienckiej ❌<br/>
+[link to sonar repo](https://github.com/Pandora-Project/Go-backend)
+[link to commit](https://github.com/Pandora-Project/e-business/commit/3a36ab61e8774e914e0eb7fa6ae09c2f7be9a35b)
+
+## Docker task 9
+### Requirements:
+3.0 Należy stworzyć po stronie serwerowej osobny serwis do łączenia z ChatGPT do usługi czatu ✅<br/>
+3.5 Należy stworzyć interfejs frontowy dla użytkownika, który komunikuje się z serwisem; odpowiedzi powinny być wysyłane do frontendowego interfejsu ✅<br/>
+4.0 Należy stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy ❌<br/>
+4.5 Należy zaimplementować filtrowanie tematów czatu — ograniczenie zagadnień jedynie do sklepu oraz ubrań — przy wysyłaniu zapytań do GPT ❌<br/>
+5.0 Należy zaimplementować filtrowanie odpowiedzi pod względem sentymentu (np. pozytywne, negatywne) ❌<br/>
+[link to commit](https://github.com/Pandora-Project/e-business/commit/f420b9f2b86b32433b34ceda74c3ebd439980b99)
