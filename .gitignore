@@ -36,3 +36,7 @@ out/
 
 ### Bot token ###
 **/src/main/**/bot-token.txt
+
+.env
+node_modules/
+node_modules
