@@ -60,6 +60,18 @@ kliencką na dockerze via docker-compose✅<br/>
 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS ✅<br/>
 [link to commit](https://github.com/Pandora-Project/e-business/commit/090e5de4d02b8bd97cec63e206e1695723cf2033)<br/>
 
+## Docker task 6
+3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+(Kotlin, Python, Java, JS, Go, Scala)  ✅<br/>
+3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+asercji  ❌<br/>
+4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 50 asercjami ❌<br/>
+4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpoint ❌<br/>
+5.0 Należy uruchomić testy funkcjonalne na Browserstacku ❌<br/>
+[link to commit](https://github.com/Pandora-Project/e-business/commit/0c7d91bd56debbee8dffff9298121ac3ffc62138)<br/>
+
 ## Docker task 7
 ### Requirements:
 3.0 Należy dodać literę do odpowiedniego kodu aplikacji serwerowej w hookach gita ✅<br/>
@@ -69,6 +81,15 @@ kliencką na dockerze via docker-compose✅<br/>
 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie aplikacji klienckiej ❌<br/>
 [link to sonar repo](https://github.com/Pandora-Project/Go-backend)<br/>
 [link to commit](https://github.com/Pandora-Project/e-business/commit/3a36ab61e8774e914e0eb7fa6ae09c2f7be9a35b)<br/>
+
+## Docker task 8
+### Requirements:
+3.0 logowanie przez aplikację serwerową (bez Oauth2) ✅<br/>
+3.5 rejestracja przez aplikację serwerową (bez Oauth2) ✅<br/>
+4.0 logowanie via Google OAuth2 ✅<br/>
+4.5 logowanie via Facebook lub Github OAuth2 ❌<br/>
+5.0 zapisywanie danych logowania OAuth2 po stronie serwera ❌<br/>
+[link to commit](https://github.com/Pandora-Project/e-business/commit/0c7d91bd56debbee8dffff9298121ac3ffc62138)<br/>
 
 ## Docker task 9
 ### Requirements:
