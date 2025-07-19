@@ -8,7 +8,7 @@ Added gradle and JDBC SQLite package. ✅<br/>
 Created simple Hello World program in java and executed by using build.gradle. ✅<br/>
 Added docker-compose ✅<br/>
 Location of image:
-[Docker Image](https://hub.docker.com/repository/docker/pandoraproject/e-business/general)<br/>
+[Docker Image](https://hub.docker.com/r/pandoraproject/e-business)<br/>
 
 ## Docker task 2
 ### Requirements:
